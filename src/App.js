@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Homepage from './Homepage'
+import Collection from './Collection'
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <ParallaxProvider>
         <Homepage/>
+        <Collection/>
       </ParallaxProvider>
     );
   }
