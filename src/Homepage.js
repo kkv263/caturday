@@ -18,6 +18,7 @@ class Homepage extends Component {
   }
 
   handleEnter(previousPosition, currentPosition, event, value){
+    console.log("enter");
     if (currentPosition === Waypoint.inside){
       this.setState({ [value] : true} );
     }
@@ -36,14 +37,14 @@ class Homepage extends Component {
           <HeaderText>feline mind.</HeaderText>
         </Parallax>     
         </HeaderImage>
-        <Waypoint bottomOffset="50%" onEnter={({ previousPosition, currentPosition, event }) => {
+        <Waypoint  bottomOffset="20%" onEnter={({ previousPosition, currentPosition, event }) => {
           this.handleEnter(previousPosition, currentPosition, event, "showAbout")
         }}>
         <About>
         {this.state.showAbout ? (<div>
-          <AboutText time="2s" top="25%" left="10%">Cats </AboutText>
-          <AboutText time="4s" top="35%" left="15%">Are </AboutText>
-          <AboutText time="6s" top="45%" left="20%">Better...</AboutText>
+          <AboutText time="1s" top="25%" left="10%">Cats </AboutText>
+          <AboutText time="2s" top="35%" left="15%">Are </AboutText>
+          <AboutText time="3s" top="45%" left="20%">Better...</AboutText>
           <Icon top="20%" right="25%"src={require('./assets/cat-food.svg')}/>
           <IconText top="30%" right="18.5%">Indepedent, silent, and a honest personality</IconText>
           <Icon top="60%" right="25%" src={require('./assets/pawprint.svg')}/>

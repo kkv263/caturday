@@ -3,6 +3,7 @@ import header from '../assets/header.jpg';
 
 export const fadeIn = keyframes`
 from { opacity: 0; transform: translateX(-5%);}
+66% { opacity: 0; transform: translateX(-2.5%);}
 to   { opacity: 1; transform: translateX(0%);}
 `
 
@@ -40,7 +41,7 @@ position: absolute;
 top: ${props => props.top};
 left: ${props => props.left};
 
-animation: ${fadeIn} 2s ease-in-out;
+animation: ${fadeIn} ${props => props.time} ease-in-out;
 `
 
 export const Icon = styled.img`
@@ -49,11 +50,11 @@ height:48px;
 position:absolute;
 top: ${props => props.top};
 right: ${props => props.right};
-animation: ${fadeIn} 3s ease;
+animation: ${fadeIn} 1s ease-in;
 `
 
 export const IconText = styled.div`
-animation: ${fadeIn} 3s ease;
+animation: ${fadeIn} 1s ease-in;
 font-family: 'Work Sans', sans-serif;
 font-size: 1em;
 font-weight: 100;
