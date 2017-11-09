@@ -9,6 +9,7 @@ class Collection extends Component {
         <ImageOne src={require("./assets/image1.png")}/> 
         <CollHeader><span>C O L L </span>E C T I O N</CollHeader>
       </CollectionWrapper>      
+
     );
   }
 }
