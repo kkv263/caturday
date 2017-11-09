@@ -13,8 +13,10 @@ class Homepage extends Component {
 
     this.state = {
       showAbout: false,
+      showHeader: false
     };
     this.handleEnter = this.handleEnter.bind(this);
+    this.handleLeave = this.handleLeave.bind(this);
   }
 
   handleEnter(previousPosition, currentPosition, event, value){
@@ -24,10 +26,25 @@ class Homepage extends Component {
     }
   }
 
+  handleLeave(previousPosition, currentPosition, event, value){
+    console.log("leave");
+    if (previousPosition === Waypoint.inside){
+      this.setState({ [value] : false} );
+    }
+  }
+
   render() {
     return (
       <div>
+      <Waypoint onLeave={({ previousPosition, currentPosition, event }) => {
+          this.handleLeave(previousPosition, currentPosition, event, "showHeader")
+        }}
+        onEnter={({ previousPosition, currentPosition, event }) => {
+          this.handleEnter(previousPosition, currentPosition, event, "showHeader")
+        }}>
+        
         <HeaderImage>
+        {this.state.showHeader ? (<div> 
         <Parallax
             offsetYMax={6000}
             offsetYMin={-6000}
@@ -35,8 +52,10 @@ class Homepage extends Component {
           >
           <HeaderText>Dive into the </HeaderText>
           <HeaderText>feline mind.</HeaderText>
-        </Parallax>     
+        </Parallax>
+        </div>) : null}     
         </HeaderImage>
+        </Waypoint>
         <Waypoint  bottomOffset="20%" onEnter={({ previousPosition, currentPosition, event }) => {
           this.handleEnter(previousPosition, currentPosition, event, "showAbout")
         }}>

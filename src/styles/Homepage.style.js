@@ -25,6 +25,7 @@ font-weight: 200;
 font-size: 3em;
 text-align:center;
 padding-right: 50%;
+z-index: 1;
 `
 
 export const About = styled.div`
