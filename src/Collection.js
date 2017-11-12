@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { Image, CollectionWrapper, GridImage, TextImage } from './styles/Collection.style'
+import { Image, CollectionWrapper, GridImage, ItemRight, ItemWrapper, ItemLeft, HeaderText, AboutText} from './styles/Collection.style'
 
 class Collection extends Component {
   render() {
     return (
       <CollectionWrapper>
-          <Image float="left" src={require("./assets/bored.jpg")} />
-          <Image float="left" src={require("./assets/couch.jpeg")} />
-          <Image float="right" src={require("./assets/white.jpeg")} />
-          <Image float="right" src={require("./assets/chair.jpg")} />
+      <ItemWrapper>
+        <ItemLeft>
+          <Image float="left" src={require("./assets/white.jpeg")} />
+          <HeaderText>hello</HeaderText>
+        </ItemLeft> 
+      </ItemWrapper>
       </CollectionWrapper>      
 
     );

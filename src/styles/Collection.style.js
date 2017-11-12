@@ -22,12 +22,28 @@ height: 200vh;
 
 export const Image = styled.img`
 float: ${props => props.float};
-width: 50%;
+width: 100%;
 height: auto;
 `
 
-export const TextImage = styled.div`
-text-align:center;
-height: 300px;
+export const ItemWrapper = styled.div`
 width: 100%;
+`
+
+export const ItemLeft = styled.div`
+width:30%;
+padding-left: 40%;
+`
+
+
+export const HeaderText = styled.div`
+font-family: 'Work Sans', sans-serif;
+font-weight: 200;
+font-size: 1.25em;
+
+`
+
+export const AboutText = styled.div`
+font-family: 'Dancing Script', cursive;
+font-size: 1.5em;
 `
