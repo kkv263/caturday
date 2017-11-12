@@ -12,44 +12,22 @@ z-index: 2;
 background-color: white;
 `
 
-export const ImageOne = styled.img`
-animation: ${fadeIn} 1s ease-in;
-max-width: 100%;
+export const GridImage = styled.div`
+float: ${props => props.float};
+width: 48%;
+margin-left: 1%;
+margin-right: 1%;
+height: 200vh;
+`
+
+export const Image = styled.img`
+float: ${props => props.float};
+width: 50%;
 height: auto;
-position:absolute;
 `
 
-export const ImageOneBack = styled.div`
-position:absolute;
-top: 75px;
-width:90%;
-height: 65vh;
-background-color: #eaebf0;
-`
-
-export const TextWrapper = styled.div`
-animation: ${fadeIn} 1s ease-in;
-position:absolute;
-font-family: 'Work Sans', sans-serif;
-font-weight: 200;
-font-size: 1em;
-width: 40%;
-height: 50%;
-right: 7.5%;
-bottom: 5%;
-`
-
-export const CollHeader = styled.h1`
-animation: ${fadeIn} 1s ease-in;
-position:absolute;
-font-family: 'Work Sans', sans-serif;
-font-weight: 400;
-font-size: 4em;
-color:black;
-top: 125px;
-left: 310px;
-
-  & > span {
-    color:white;
-  }
+export const TextImage = styled.div`
+text-align:center;
+height: 300px;
+width: 100%;
 `
