@@ -24,6 +24,7 @@ export const Image = styled.img`
 float: ${props => props.float};
 width: 100%;
 height: auto;
+padding-bottom: 5%;
 `
 
 export const ItemWrapper = styled.div`
@@ -31,12 +32,12 @@ width: 100%;
 `
 
 export const ItemLeft = styled.div`
-width:30%;
-padding-left: 40%;
+width: ${props => props.w};
+padding-left: ${props => props.pLeft};
+padding-bottom: 10%;
 `
 
-
-export const HeaderText = styled.div`
+export const HeaderText = styled.p`
 font-family: 'Work Sans', sans-serif;
 font-weight: 200;
 font-size: 1.25em;
