@@ -21,20 +21,48 @@ height: 200vh;
 `
 
 export const Image = styled.img`
-float: ${props => props.float};
 width: 100%;
 height: auto;
-padding-bottom: 5%;
+display: block;
 `
 
 export const ItemWrapper = styled.div`
 width: 100%;
 `
 
+export const LeftWrapper = styled.div`
+width:15%;
+float:left;
+margin-left: 10%;
+background-color: #EBF0F6;
+padding-top: 2.5%;
+padding-bottom: 2.5%;
+ & > p
+ {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 5vw;
+  text-align:center;   
+  color:#919CA9;
+ }
+`
+
+export const RightWrapper = styled.div`
+width:65%;
+float:right;
+height: auto;
+margin-right: 10%;
+background-color:#919CA9;
+ & > h1{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 5vw;
+ }
+`
+
 export const ItemLeft = styled.div`
 width: ${props => props.w};
-padding-left: ${props => props.pLeft};
-padding-bottom: 10%;
+float: ${props => props.float};
 `
 
 export const HeaderText = styled.p`
