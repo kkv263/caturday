@@ -57,7 +57,7 @@ animation: ${fadeIn} 1s ease-in;
 export const IconText = styled.div`
 animation: ${fadeIn} 1s ease-in;
 font-family: 'Work Sans', sans-serif;
-font-size: 1em;
+font-size: 1.25em;
 font-weight: 100;
 width: 10%;
 position: absolute;

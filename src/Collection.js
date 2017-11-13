@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Image, CollectionWrapper, ItemWrapper, ItemLeft, HeaderText,} from './styles/Collection.style'
-import { AboutText } from './styles/Homepage.style';
 
 class Collection extends Component {
   render() {

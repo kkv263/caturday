@@ -41,10 +41,4 @@ export const HeaderText = styled.p`
 font-family: 'Work Sans', sans-serif;
 font-weight: 200;
 font-size: 1.25em;
-
-`
-
-export const AboutText = styled.div`
-font-family: 'Dancing Script', cursive;
-font-size: 1.5em;
 `
