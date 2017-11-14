@@ -41,7 +41,6 @@ font-size: 4em;
 position: absolute;
 top: ${props => props.top};
 left: ${props => props.left};
-
 animation: ${fadeIn} ${props => props.time} ease-in-out;
 `
 

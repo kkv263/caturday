@@ -7,7 +7,6 @@ import Waypoint from 'react-waypoint';
 
 
 class Homepage extends Component {
-
   constructor (props){
     super(props);
 
@@ -20,14 +19,12 @@ class Homepage extends Component {
   }
 
   handleEnter(previousPosition, currentPosition, event, value){
-    console.log("enter");
     if (currentPosition === Waypoint.inside){
       this.setState({ [value] : true} );
     }
   }
 
   handleLeave(previousPosition, currentPosition, event, value){
-    console.log("leave");
     if (previousPosition === Waypoint.inside){
       this.setState({ [value] : false} );
     }
@@ -56,7 +53,7 @@ class Homepage extends Component {
         </div>) : null}     
         </HeaderImage>
         </Waypoint>
-        <Waypoint  bottomOffset="20%" onEnter={({ previousPosition, currentPosition, event }) => {
+        <Waypoint  bottomOffset="10%" onEnter={({ previousPosition, currentPosition, event }) => {
           this.handleEnter(previousPosition, currentPosition, event, "showAbout")
         }}>
         <About>
