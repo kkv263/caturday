@@ -33,14 +33,14 @@ padding-top: 2.5%;
 margin-left: 10%;
 color: ${props => props.color};
 font-family: 'Dancing Script', cursive;
-font-size: 4vw;
+font-size: 10vw;
  & > p {
   font-family: 'Work Sans', sans-serif;
   font-weight: 200;
-  font-size: 1.5vw;
-  width: 60%;
+  font-size: 3vw;
+  width: 80%;
   padding-top: 2.5%;
-  margin-left: 20%;
+  margin-left: 10%;
  }
 `
 

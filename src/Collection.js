@@ -1,31 +1,24 @@
 import React, { Component } from 'react';
-import { Image, CollectionWrapper, ItemWrapper, ItemLeft, LeftWrapper, RightWrapper} from './styles/Collection.style'
+import { Image, CollectionWrapper, ItemWrapper, GridImage, GridText } from './styles/Collection.style'
 
 class Collection extends Component {
   render() {
     return (
       <CollectionWrapper>
       <ItemWrapper>
-      <LeftWrapper>
-        <p>C</p><p>O</p><p>L</p><p>L</p><p>E</p><p>C</p><p>T</p><p>I</p><p>O</p><p>N</p>
-      
-      </LeftWrapper>
-      <RightWrapper>
-        <ItemLeft float="left" w="60%" >
+       <GridImage>
           <Image src={require("./assets/chair.jpg")} />
-        </ItemLeft> 
-        <ItemLeft float="right" w="40%" >
-          <Image src={require("./assets/bored.jpg")} />
-        </ItemLeft>
-        <ItemLeft float="left" w="60%" >
+          <GridText>A cat's cerebral cortex (the part of the brain in charge of cognitive information processing) has 300 million neurons, compared with a dog's 160 million.</GridText>
+       </GridImage>
+       <GridImage>
           <Image src={require("./assets/couch.jpeg")} />
-        </ItemLeft>
-        <ItemLeft float="right" w="40%" >
+          <GridText>Cats have free-floating clavicle bones that attach their shoulders to their forelimbs, which allows them to squeeze through very small spaces.</GridText>
+       </GridImage>
+       <GridImage>
           <Image src={require("./assets/white.jpeg")} />
-        </ItemLeft>
-
-      </RightWrapper>
-
+          <GridText>Cats have inferior daytime sight, but during the night they need seven times less light than humans to see.</GridText>
+       </GridImage>
+       
 
       </ItemWrapper>
       </CollectionWrapper>      
