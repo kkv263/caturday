@@ -43,3 +43,21 @@ align-items: center;
 justify-content:center;
 `
 
+export const Footer = styled.div`
+width: 70%;
+opacity: 0.5;
+margin-left: 15%;
+border-top .5px solid;
+border-color: #919CA9;
+height: 50px;
+padding-top: 2%;
+padding-left: 2%;
+float:left;
+ & > span {
+  float:right;
+  padding-right: 2%;
+ }
+`
+
+
+

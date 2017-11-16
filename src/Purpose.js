@@ -32,8 +32,8 @@ class Purpose extends Component {
         </PurposeText>
         <PurposeImage src={require('./assets/purpose.jpg')} />
         <PurposeText>
-        <p> Be prepared to uncover these secrets. Scroll down to find out 
-        more on the exciting lives that cats lead.
+        <p> Caturday provides a platform for cat lovers 
+        to read interesting facts about a cat's life.
         </p></PurposeText>
       </PurposeWrapper>
       </div>) : null }

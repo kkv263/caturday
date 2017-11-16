@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, CollectionWrapper, ItemWrapper, GridImage, GridText } from './styles/Collection.style'
+import { Image, CollectionWrapper, ItemWrapper, GridImage, GridText, Footer } from './styles/Collection.style'
 import Waypoint from 'react-waypoint';
 
 class Collection extends Component {
@@ -52,9 +52,8 @@ class Collection extends Component {
           <GridText>Cats have inferior daytime sight, but during the night they need seven times less light than humans to see.</GridText>
        </GridImage>) : null }
        </Waypoint>
- 
       </ItemWrapper>
-      <h1>hello</h1>
+      <Footer > (logo) Caturday <span>Kevin Vu</span></Footer>
       </CollectionWrapper>      
 
     );
