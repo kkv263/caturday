@@ -27,6 +27,10 @@ width:100%;
 font-family: 'Work Sans', sans-serif;
 font-weight: 200;
 font-size: 1.5em;
+
+@media all and (max-width: 768px) {
+  font-size: 1em;
+}
 `
 
 export const Image = styled.img`
@@ -53,6 +57,7 @@ height: 50px;
 padding-top: 2%;
 padding-left: 2%;
 float:left;
+text-align:left;
  & > span {
   float:right;
   padding-right: 2%;
