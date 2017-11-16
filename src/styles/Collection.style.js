@@ -58,6 +58,17 @@ float:left;
   padding-right: 2%;
  }
 `
-
+export const HeaderText = styled.div`
+animation: ${fadeIn} 1s ease-in;
+border-top: 1px solid #000000;
+border-bottom: 1px solid #000000;
+font-family: 'Dancing Script', cursive;
+width: 80%;
+font-size: 10vw;
+text-align:center;
+padding-bottom: 2.5%;
+margin-bottom: 5%;
+margin-left: 10%;
+`
 
 

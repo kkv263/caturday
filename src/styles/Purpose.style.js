@@ -9,7 +9,7 @@ to   { opacity: 1; transform: translateX(0%);}
 export const FadeWrapper = styled.div`
 height: 80vw;
 width: 100%;
-margin-bottom: 10%;
+margin-bottom: 5%;
 `
 
 export const PurposeWrapper = styled.div`

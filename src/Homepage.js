@@ -53,7 +53,7 @@ class Homepage extends Component {
         </div>) : null}     
         </HeaderImage>
         </Waypoint>
-        <Waypoint  bottomOffset="10%" onEnter={({ previousPosition, currentPosition, event }) => {
+        <Waypoint  bottomOffset="5%" onEnter={({ previousPosition, currentPosition, event }) => {
           this.handleEnter(previousPosition, currentPosition, event, "showAbout")
         }}>
         <About>

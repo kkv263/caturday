@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, CollectionWrapper, ItemWrapper, GridImage, GridText, Footer } from './styles/Collection.style'
+import { Image, HeaderText, CollectionWrapper, ItemWrapper, GridImage, GridText, Footer } from './styles/Collection.style'
 import Waypoint from 'react-waypoint';
 
 class Collection extends Component {
@@ -9,7 +9,8 @@ class Collection extends Component {
     this.state = {
       show1: false,
       show2: false,
-      show3: false
+      show3: false,
+      showHeader: false
     };
     this.handleEnter = this.handleEnter.bind(this);
   }
@@ -25,6 +26,12 @@ class Collection extends Component {
 
     return (
       <CollectionWrapper>
+       <Waypoint bottomOffset="10%" onEnter={({ previousPosition, currentPosition, event})=> {
+          this.handleEnter(previousPosition, currentPosition, event, "showHeader")
+       }}>
+        {this.state.showHeader ? (<HeaderText> Just the facts:</HeaderText>) : null}
+       </Waypoint>
+
       <ItemWrapper>
       <Waypoint onEnter={({ previousPosition, currentPosition, event})=> {
           this.handleEnter(previousPosition, currentPosition, event, "show1")
