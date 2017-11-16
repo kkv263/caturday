@@ -1,8 +1,9 @@
 import styled, {keyframes} from 'styled-components'
 
 export const fadeIn = keyframes`
-from { opacity: 0; }
-to   { opacity: 1; }
+from { opacity: 0; transform: translateX(-5%);}
+66% { opacity: 0; transform: translateX(-2.5%);}
+to   { opacity: 1; transform: translateX(0%);}
 `
 
 export const CollectionWrapper = styled.div`
@@ -13,6 +14,7 @@ background-color: white;
 `
 
 export const GridImage = styled.div`
+animation: ${fadeIn} 1s ease-in;
 position:relative;
 width: 80%;
 overflow:hidden;

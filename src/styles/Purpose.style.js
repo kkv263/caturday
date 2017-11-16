@@ -13,7 +13,7 @@ margin-bottom: 10%;
 `
 
 export const PurposeWrapper = styled.div`
-animation: ${fadeIn} 2s ease-in;
+animation: ${fadeIn} 1s ease-in;
 width: 80%;
 height: 80vw;
 background-image: linear-gradient(top, #919CA9  50%, #F6F2EB  50%);
