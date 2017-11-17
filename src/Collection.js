@@ -60,7 +60,7 @@ class Collection extends Component {
        </GridImage>) : null }
        </Waypoint>
       </ItemWrapper>
-      <Footer > (logo) Caturday <span>Kevin Vu</span></Footer>
+      <Footer > Caturday <span>Kevin Vu</span></Footer>
       </CollectionWrapper>      
 
     );

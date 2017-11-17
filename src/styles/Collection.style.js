@@ -48,6 +48,8 @@ justify-content:center;
 `
 
 export const Footer = styled.div`
+font-family: 'Dancing Script', cursive;
+font-size: 1.5em;
 width: 70%;
 opacity: 0.5;
 margin-left: 15%;
@@ -59,6 +61,8 @@ padding-left: 2%;
 float:left;
 text-align:left;
  & > span {
+  font-size: .75em;
+  font-family: 'Work Sans', sans-serif;
   float:right;
   padding-right: 2%;
  }
